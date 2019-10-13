@@ -1,0 +1,390 @@
+html,body{
+    margin: 0;
+    font-family: sans-serif;
+
+}
+
+body{
+    width: 100vw;
+    scroll-snap-type: y proximity;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    transition: .4s;
+}
+
+a:hover{
+    opacity: .4;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    z-index: 200;
+}
+
+header ul{
+    list-style: none;
+    color: #fff;
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header ul li{
+    display: inline;
+}
+
+.active{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#spacer{
+    height: 50px;
+}
+
+#toggle{
+float: left;
+}
+
+#dropdown{
+    float: right;
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.content{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    text-align: center;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.section-title{
+    font-size: 68px;
+}
+.section-content{
+    font-size: 20px;
+}
+
+.section-image{
+    position: absolute;
+    width: 60%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.section-image img{
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+
+.half-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .4s;
+}
+
+.boys{
+    background-color: rgba(41, 72, 207, 0.8);
+    width: 50%;
+    height: 100vh;
+    display: inline-block;
+    transition: 4s;
+    transition-property: width;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.girls{
+    background-color: rgba(243, 122, 213, 0.8);
+    width: 50%;
+    height: 100vh;
+    display: inline-block;
+    position: relative;
+    transition: 4s;
+    transition-property: width;
+    cursor: pointer;
+
+}
+
+.boys:hover  .half-content, .girls:hover .half-content{
+    opacity: 1;
+}
+
+
+#fifa{
+    background: url(img/fifa.png);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+#mario{
+    background: url(img/mario.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+#cod{
+    background: url(img/cod.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+#sims{
+    background: url(img/sims.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+#rer{
+    background: url(img/rer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+#witch{
+    background: url(img/witcher.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+#rs{
+    background: url(img/osrs.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+#botw{
+    background: url(img/botw.webp);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+#last{
+    background: url(img/last.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+#csgo{
+    background: url(img/csgo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+#action{
+    background: url(img/action.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+#sport{
+    background: url(img/sport.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+#shooter{
+    background: url(img/shooter.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+#platform{
+    background: url(img/platformer.png);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+#simulation{
+    background: url(img/simulation.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+#strat{
+    background: url(img/strat.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+#mmo{
+    background: url(img/mmo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+#card{
+    background: url(img/card.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+#br{
+    background: url(img/br.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+#td{
+    background: url(img/td.png);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.row{
+    width: 100%;
+    height: 25vh;
+    position: relative;
+}
+.title{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 600;
+    font-weight: bold;
+}
+
+.column{
+    /* background: green; */
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+
+.column-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 500;
+    font-weight: bold;
+    z-index: 600;
+    font-size: 40px;
+    -webkit-text-stroke: 1px #000;
+}
+
+.cmd{
+    background: url(img/cmd.webp);
+    opacity: .8;
+    background-size: contain;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 500;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+}
+
+.nl{
+    background: url(img/nl.png);
+    opacity: .8;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 500;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+}
+
+.fifa{
+    background: url(img/fifa.png);
+    background-position: 50% 0;
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+
+.gta{
+    background: url(img/gta.jpg);
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mario{
+    background: url(img/mario.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cod{
+    background: url(img/cod.jpg);
+    background-position: 50% 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fortnite{
+    background: url(img/br.jpg);
+    background-position: 50% 20%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.candy{
+    background: url(img/candy.webp);
+    background-position: 50% 20%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.minecraft{
+    background: url(img/minecraft.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.pokemon{
+    background: url(img/pokemon.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.battlefield{
+    background: url(img/battlefield.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.farm{
+    background: url(img/farm.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.hay{
+    background: url(img/hayday.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.farmhero{
+    background: url(img/farmheroes.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
